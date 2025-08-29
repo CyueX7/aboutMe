@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TiRms oTC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="top-right-controls">
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+  </button>
+  <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+  </button>
+</div>
+
+<nav class="main-nav" id="mainNav" aria-hidden="true">
+  <ul>
+    <li><a href="#news" id="navNews">News</a></li>
+    <li><a href="#about" id="navAbout">About Me</a></li>
+  </ul>
+</nav>
+
+<div class="container" id="news">
+  <div class="info-section">
+    <h1><span id="typed-greeting"></span></h1>
+    <h2>A High School Student <span class="code-tag">&lt;Developer /&gt;</span></h2>
+    <p class="subtitle">Meow &gt;&lt; </p>
+    <div class="social-icons">
+      <a href="https://discord.gg/aaM4NBuU5q" class="icon-link" id="icon-discord" title="Discord" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+      <a href="https://github.com/CyueX7" class="icon-link" id="icon-github" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      <a href="https://tirms.xyz" class="icon-link" id="icon-globe" title="個人網站" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i></a>
+    </div>
+  </div>
+  <div class="profile-image-section">
+    <img src="img/a1.png" alt="你怎麼看到我的" width="300" height="300">
+  </div>
+</div>
+
+<div class="modal" id="aboutModal">
+  <div class="modal-content">
+    <span class="close-button" id="closeAboutModal">×</span>
+    <h2 id="about">About Me</h2>
+    <p>這裡是關於 cyue.x7 的詳細介紹。</p>
+    <ul>
+      <li>早安。</li>
+    </ul>
+  </div>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="js/app.js"></script>
+<footer>
+  &copy; 2025 cyue.x7. All rights reserved.
+</footer>
+</body>
+</html>
